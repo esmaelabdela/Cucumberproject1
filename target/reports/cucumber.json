@@ -1,0 +1,285 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-01-09T23:30:37.680Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3201431500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User should be able to add a new account with valid credencial",
+        "description": "",
+        "id": "add-new-account-page-fanctionality-validation;user-should-be-able-to-add-a-new-account-with-valid-credencial;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3382041200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the codefios login page",
+            "match": {
+              "location": "steps.StepDefinition.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3199142900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the userName as \"demo2@codefios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo2@codefios.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.StepDefinition.userEnterTheUserNameAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3129443300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter the password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.StepDefinition.user_enter_the_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11750540200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on sign in button",
+            "match": {
+              "location": "steps.StepDefinition.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 543391100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to land dashBoard page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_dashBoard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5023505000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on list accounts",
+            "match": {
+              "location": "steps.StepDefinition.user_click_on_list_accounts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to land on list account page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_on_list_account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3124034400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on add account",
+            "match": {
+              "location": "steps.StepDefinition.user_click_on_add_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3181378100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the account name as \"ESMAEL account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ESMAEL account\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.StepDefinition.user_enter_the_account_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3180614600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the descriptin as \"New bank account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New bank account\"",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.StepDefinition.user_enter_the_descriptin(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3114462700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User entert the initial balance as \"2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.StepDefinition.user_entert_the_initial_balance(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3160260600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter the account number as \"123456654321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456654321\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.StepDefinition.user_enter_the_account_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3146616300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter the contact person as \"Yusra\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yusra\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.StepDefinition.user_enter_the_contact_person(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3114050600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on save button",
+            "match": {
+              "location": "steps.StepDefinition.user_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295245600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should be able to create an account",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_create_an_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAccountFeature"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@AddAcountScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Add new account page fanctionality validation",
+    "description": "",
+    "id": "add-new-account-page-fanctionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/AddNewAccount.feature",
+    "tags": [
+      {
+        "name": "@AddAccountFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      }
+    ]
+  }
+]
