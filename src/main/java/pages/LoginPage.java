@@ -12,7 +12,7 @@ public class LoginPage {
 	 public LoginPage(WebDriver driver) {
 	  this.driver = driver;  
 	 } 
-	 // Element Library
+	 // Element Library     
 	 @FindBy(how = How.XPATH, using = "//input[@id='user_name']")
 	 public WebElement UserName;
 	 @FindBy(how = How.XPATH, using = "//input[@id='password']")
@@ -47,22 +47,7 @@ public class LoginPage {
 	    e.printStackTrace();
 	   }
 	  } 
-	  
-	  
-	  
-//	  public void login(String userName, String password ) { 
-//		  UserName.sendKeys(userName);
-//		  Password.sendKeys(password);
-//		  SignInButton.click();
-//		  try {
-//			  Thread.sleep(3000);
-//		  } catch (InterruptedException e) {
-//			  e.printStackTrace();
-//		  }
-//	  } 
-
-	  
-	  
+	    
 	  
 	  public String getPageTitle() {
 	   return driver.getTitle();

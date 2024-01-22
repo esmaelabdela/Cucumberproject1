@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@AddAccountFeature"
+      "name": "@AddNewAccountFeature"
     },
     {
       "name": "@Regression"
@@ -39,7 +39,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "User should be able to land dashBoard page",
+  "name": "User should be able to land on dashboard page",
   "keyword": "Then "
 });
 formatter.step({
@@ -52,6 +52,10 @@ formatter.step({
 });
 formatter.step({
   "name": "User click on add account",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User fill all the required information",
   "keyword": "When "
 });
 formatter.step({
@@ -100,7 +104,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "demo2@codefios.com",
+        "demo1@codefios.com",
         "abc123",
         "ESMAEL account",
         "New bank account",
@@ -117,7 +121,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@AddAccountFeature"
+      "name": "@AddNewAccountFeature"
     },
     {
       "name": "@Regression"
@@ -141,7 +145,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enter the userName as \"demo2@codefios.com\"",
+  "name": "User enter the userName as \"demo1@codefios.com\"",
   "keyword": "When "
 });
 formatter.match({
@@ -171,7 +175,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should be able to land dashBoard page",
+  "name": "User should be able to land on dashboard page",
   "keyword": "Then "
 });
 formatter.match({
@@ -206,6 +210,16 @@ formatter.step({
 });
 formatter.match({
   "location": "steps.StepDefinition.user_click_on_add_account()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fill all the required information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "steps.StepDefinition.user_fill_all_the_required_information()"
 });
 formatter.result({
   "status": "passed"

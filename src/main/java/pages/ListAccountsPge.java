@@ -1,5 +1,4 @@
 package pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,12 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 
-
-public class ListAccounts {
+public class ListAccountsPge extends TestBase{
 
 	WebDriver driver;
 
-	public ListAccounts(WebDriver driver) {
+	public ListAccountsPge(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -21,6 +19,10 @@ public class ListAccounts {
 	public WebElement ListAccounts;
 	@FindBy(how = How.XPATH, using = "//button[text()='Add Account']")
 	public WebElement AddAccount;
+	@FindBy(how = How.XPATH, using = "//h5[@id='accountModalLabel']")
+	public WebElement addAccountWindow;
+	@FindBy(how = How.XPATH, using = "//strong[text()='Dashboard']")
+	public WebElement dashboard;
 	@FindBy(how = How.XPATH, using = "//input[@id ='account_name']")
 	public WebElement AccountName;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"description\"]")
@@ -33,20 +35,20 @@ public class ListAccounts {
 	public WebElement ContactPerson;
 	@FindBy(how = How.XPATH, using = "//button[@id=\"accountSave\"]")
 	public WebElement SaveButton;
+	@FindBy(how = How.XPATH, using = "//*[text()='Account Added Successfully.']")
+	WebElement successAddAlertElement;
 
+	
+	
 	// Methods to interact with the elements
 	public void clickListAccounts() {
 		ListAccounts.click();
-		;
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
 	}
 
 	public void clickAddAccounts() {
 		AddAccount.click();
+		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -54,82 +56,63 @@ public class ListAccounts {
 		}
 	}
 
+	public void validateAddAccountWindow(String expected ) {
+		TestBase.validateElement("window is not available", expected, addAccountWindow.getText());
+	}
+	public void validatedashboardPage(String expected ) {
+		TestBase.validateElement("Dashboard is not available", expected, dashboard.getText());
+	}
+	
 	public void enterAccountName(String accountName) {
-		AccountName.sendKeys(accountName);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		AccountName.sendKeys(accountName);	
 	}
 
 	public void enterDescription(String description) {
 		Description.sendKeys(description);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void enterInitialBalance(String initialBalance) {
 		InitialBalance.sendKeys(initialBalance);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void enterAccountNumber(String accountNumber) {
 		AccountNumber.sendKeys(accountNumber);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void enterContactPerson(String contactPerson) {
 		ContactPerson.sendKeys(contactPerson);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	
 	}
 
 	public void clickOnSaveButton() {
 		SaveButton.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
-
 	
-
+	public void validateAddSuccessAlertPopup(String msg) {
+		TestBase.waitMethod();
+		TestBase.validateDisplayElement(msg, successAddAlertElement);
+        String actual = successAddAlertElement.getText();
+        System.out.println(actual); 
+	}
+	
+	
 	String beforeXpath ="//tbody/tr[";
 	String  afterXpath= "]/td[2]";
 	
-	public void validateInsertedAccountName() {
-		
-	for(int i = 1; i<=5; i++) {
-		String expected = "ESMAEL account";
-		String actualName = driver.findElement(By.xpath(beforeXpath + i + afterXpath)).getText();
-		System.out.println(actualName);
-		
-	if(actualName. contains(expected)) {
-	    System.out.println("AccountName Exist");
-	
-		  }
-		 break;
-	 } 
-	
-  }
-	
-	
+	public void validateListAccountsPage(String expected) {	
+		for(int i = 1; i<=5; i++) {
+				
+			String actualName = driver.findElement(By.xpath(beforeXpath + i + afterXpath)).getText();
+			TestBase.validateElement("element is not available", expected, actualName);
+     		System.out.println(actualName);
+			
+			if(actualName. contains(expected)) {
+				System.out.println("AccountName Exist");	
+				
+			}
+			break;
+		} 
+	}
 	
 	
 	

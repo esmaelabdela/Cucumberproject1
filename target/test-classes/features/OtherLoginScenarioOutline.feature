@@ -9,7 +9,7 @@ Scenario Outline: User should not be able to login with valid credencial
 When User enter the userName as "<username>"
 When User enter the password as "<password>"
 And User click on sign in button
-Then User should be able to land dashBoard page
+Then User should be able to land on dashboard page
 Examples:
 |username|password|
 |demo@codefios.com|abc123|

@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
    @CucumberOptions(
     features = "classpath:features",
     glue = "steps",
-    tags = "@AddAccountFeature",
+    tags = "@AddAcountScenario",
     monochrome = true,
     dryRun = false,
     plugin = {

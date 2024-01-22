@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-01-09T23:30:37.680Z",
+        "start_timestamp": "2024-01-17T04:32:49.037Z",
         "before": [
           {
             "result": {
-              "duration": 3201431500,
+              "duration": 3157960400,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
             }
           }
         ],
-        "line": 24,
+        "line": 25,
         "name": "User should be able to add a new account with valid credencial",
         "description": "",
         "id": "add-new-account-page-fanctionality-validation;user-should-be-able-to-add-a-new-account-with-valid-credencial;;2",
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3382041200,
+              "duration": 1972559700,
               "status": "passed"
             },
             "line": 6,
@@ -36,15 +36,15 @@
           },
           {
             "result": {
-              "duration": 3199142900,
+              "duration": 3223414400,
               "status": "passed"
             },
             "line": 7,
-            "name": "User enter the userName as \"demo2@codefios.com\"",
+            "name": "User enter the userName as \"demo1@codefios.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"demo2@codefios.com\"",
+                  "val": "\"demo1@codefios.com\"",
                   "offset": 27
                 }
               ],
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 3129443300,
+              "duration": 3198835000,
               "status": "passed"
             },
             "line": 8,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 11750540200,
+              "duration": 11847772200,
               "status": "passed"
             },
             "line": 9,
@@ -84,11 +84,11 @@
           },
           {
             "result": {
-              "duration": 543391100,
+              "duration": 151771100,
               "status": "passed"
             },
             "line": 10,
-            "name": "User should be able to land dashBoard page",
+            "name": "User should be able to land on dashboard page",
             "match": {
               "location": "steps.StepDefinition.user_should_be_able_to_land_dashBoard_page()"
             },
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 5023505000,
+              "duration": 2237143700,
               "status": "passed"
             },
             "line": 11,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 1000600,
+              "duration": 33994900,
               "status": "passed"
             },
             "line": 12,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 3124034400,
+              "duration": 3147096500,
               "status": "passed"
             },
             "line": 13,
@@ -132,10 +132,22 @@
           },
           {
             "result": {
-              "duration": 3181378100,
+              "duration": 849292100,
               "status": "passed"
             },
             "line": 14,
+            "name": "User fill all the required information",
+            "match": {
+              "location": "steps.StepDefinition.user_fill_all_the_required_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169681600,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "User enter the account name as \"ESMAEL account\"",
             "match": {
               "arguments": [
@@ -150,10 +162,10 @@
           },
           {
             "result": {
-              "duration": 3180614600,
+              "duration": 182523300,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "User enter the descriptin as \"New bank account\"",
             "match": {
               "arguments": [
@@ -168,10 +180,10 @@
           },
           {
             "result": {
-              "duration": 3114462700,
+              "duration": 123579300,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "User entert the initial balance as \"2000\"",
             "match": {
               "arguments": [
@@ -186,10 +198,10 @@
           },
           {
             "result": {
-              "duration": 3160260600,
+              "duration": 158882800,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "User enter the account number as \"123456654321\"",
             "match": {
               "arguments": [
@@ -204,10 +216,10 @@
           },
           {
             "result": {
-              "duration": 3146616300,
+              "duration": 138579200,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "User enter the contact person as \"Yusra\"",
             "match": {
               "arguments": [
@@ -222,10 +234,10 @@
           },
           {
             "result": {
-              "duration": 3114050600,
+              "duration": 112276400,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "User click on save button",
             "match": {
               "location": "steps.StepDefinition.user_click_on_save_button()"
@@ -234,10 +246,10 @@
           },
           {
             "result": {
-              "duration": 295245600,
+              "duration": 1319543100,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "User should be able to create an account",
             "match": {
               "location": "steps.StepDefinition.user_should_be_able_to_create_an_account()"
@@ -247,7 +259,7 @@
         ],
         "tags": [
           {
-            "name": "@AddAccountFeature"
+            "name": "@AddNewAccountFeature"
           },
           {
             "name": "@Regression"
@@ -265,7 +277,7 @@
     "uri": "classpath:features/AddNewAccount.feature",
     "tags": [
       {
-        "name": "@AddAccountFeature",
+        "name": "@AddNewAccountFeature",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -277,7 +289,7 @@
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 20
+          "column": 23
         }
       }
     ]
